@@ -7,7 +7,7 @@ function App() {
       <Text>amsasmo</Text>
 
       <Text>dasdasd</Text>
-
+      <Text>Ahmet selalmaz</Text>
       <View style={{backgroundColor: 'red', flex: 1}}></View>
     </SafeAreaView>
   );
