@@ -1,16 +1,18 @@
-import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {SafeAreaView, StyleSheet, Text, TextInput, View} from 'react-native';
+import {Provider} from 'react-redux';
+import {Store} from './src/redux/Store';
+import First from './src/First/First';
+import Second from './src/Second/Second';
 
 function App() {
   return (
-    <SafeAreaView>
-      <Text>amsasmo</Text>
-      <Text style={{backgroundColor: 'blue', fontSize: 15, fontWeight: 'bold'}}>
-        dasdasd
-      </Text>
-      <Text>Ahm et selalm az</Text>
-      <View style={{backgroundColor: 'red', flex: 1}}></View>
-    </SafeAreaView>
+    <Provider store={Store}>
+      <SafeAreaView style={{flex: 1}}>
+        <First></First>
+        <Second></Second>
+      </SafeAreaView>
+    </Provider>
   );
 }
 
