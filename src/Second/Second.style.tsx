@@ -1,10 +1,13 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#bdbdbd',
+    padding: 20,
+  },
   outputContainer: {
     flex: 1,
-    padding: 20,
-    backgroundColor: '#bdbdbd',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -18,5 +21,11 @@ export default StyleSheet.create({
     padding: 10,
     margin: 10,
     fontSize: 16,
+  },
+  header: {
+    textAlign: 'center',
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'red',
   },
 });
