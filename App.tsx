@@ -5,8 +5,9 @@ function App() {
   return (
     <SafeAreaView>
       <Text>amsasmo</Text>
-
-      <Text>dasdasd</Text>
+      <Text style={{backgroundColor: 'blue', fontSize: 15, fontWeight: 'bold'}}>
+        dasdasd
+      </Text>
       <Text>Ahmet selalmaz</Text>
       <View style={{backgroundColor: 'red', flex: 1}}></View>
     </SafeAreaView>
