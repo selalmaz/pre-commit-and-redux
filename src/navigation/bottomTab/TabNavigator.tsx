@@ -1,11 +1,12 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import First from '../screens/Input';
-import Second from '../screens/Output';
+import First from '../../screens/Input';
+import Second from '../../screens/Output';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {tabParamList} from './types/types';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<tabParamList>();
 
 const TabNavigator = () => {
   return (

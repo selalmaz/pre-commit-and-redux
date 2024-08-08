@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import {Store} from './redux/Store';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import TabNavigator from './navigation/TabNavigator';
+import TabNavigator from './navigation/bottomTab/TabNavigator';
 
 const Tab = createBottomTabNavigator();
 
