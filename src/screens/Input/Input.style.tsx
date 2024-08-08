@@ -4,13 +4,13 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#dbdbdb',
+    backgroundColor: '#90d1c8',
   },
   header: {
     textAlign: 'center',
     fontSize: 25,
     fontWeight: 'bold',
-    color: 'red',
+    color: '#008080',
   },
 
   inputContainer: {
@@ -24,8 +24,10 @@ export default StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     margin: 10,
+    fontSize: 16,
     borderWidth: 1,
     borderColor: 'black',
+    color: 'black',
   },
   button: {
     backgroundColor: '#005477',

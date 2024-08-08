@@ -2,7 +2,6 @@ import React from 'react';
 import Output from '../../screens/Output';
 import StackScrren3 from '../../screens/StackScrren3';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {OutputStackParamList} from '../types/types';
 
 const Stack = createNativeStackNavigator<OutputStackParamList>();
