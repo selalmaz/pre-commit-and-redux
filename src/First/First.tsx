@@ -9,8 +9,6 @@ const First = () => {
   const {name, surname, age} = useSelector((state: StateType) => state.person);
   const dispatch = useDispatch();
 
-  const onChange = () => {};
-
   return (
     <View style={style.container}>
       <Text style={style.header}>First Component</Text>
@@ -20,14 +18,12 @@ const First = () => {
           style={style.input}
           placeholder="adinizi giriniz"
           value={name}
-          onChangeText={text => dispatch(setName(text))}
-          onChange={onChange}></TextInput>
+          onChangeText={text => dispatch(setName(text))}></TextInput>
         <TextInput
           style={style.input}
           placeholder="soyadinizi giriniz"
           value={surname}
-          onChangeText={text => dispatch(setSurname(text))}
-          onChange={onChange}></TextInput>
+          onChangeText={text => dispatch(setSurname(text))}></TextInput>
         <TextInput
           style={style.input}
           placeholder="yasinizi giriniz"
