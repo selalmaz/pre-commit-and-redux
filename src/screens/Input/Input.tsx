@@ -4,10 +4,19 @@ import style from './Input.style';
 import {useDispatch, useSelector} from 'react-redux';
 import {StateType} from '../../redux/Store';
 import {setAge, setName, setSurname} from '../../redux/Slice';
+import {TouchableOpacity} from 'react-native';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {InputStackParamList} from '../../navigation/types/types';
 
-const InputPage = () => {
+type props = NativeStackScreenProps<InputStackParamList>;
+
+const InputPage = ({navigation}: props) => {
   const {name, surname, age} = useSelector((state: StateType) => state.person);
   const dispatch = useDispatch();
+
+  function goToStack1() {
+    navigation.navigate('StackScreen1');
+  }
 
   return (
     <View style={style.container}>
@@ -32,6 +41,10 @@ const InputPage = () => {
             dispatch(setAge(text));
           }}></TextInput>
       </View>
+
+      <TouchableOpacity style={style.button} onPress={goToStack1}>
+        <Text style={style.buttonText}>Sayfa bire geçis yap</Text>
+      </TouchableOpacity>
     </View>
   );
 };
