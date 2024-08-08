@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {View, TextInput, Text} from 'react-native';
-import style from './First.style';
+import style from './Input.style';
 import {useDispatch, useSelector} from 'react-redux';
-import {StateType} from '../redux/Store';
-import {setAge, setName, setSurname} from '../redux/Slice';
+import {StateType} from '../../redux/Store';
+import {setAge, setName, setSurname} from '../../redux/Slice';
 
-const First = () => {
+const InputPage = () => {
   const {name, surname, age} = useSelector((state: StateType) => state.person);
   const dispatch = useDispatch();
 
@@ -36,4 +36,4 @@ const First = () => {
   );
 };
 
-export default First;
+export default InputPage;

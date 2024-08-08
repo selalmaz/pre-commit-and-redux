@@ -1,10 +1,10 @@
 import React from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
-import style from './Second.style';
+import style from './Output.style';
 import {useSelector} from 'react-redux';
-import {StateType} from '../redux/Store';
+import {StateType} from '../../redux/Store';
 
-const Second = () => {
+const OutputPage = () => {
   const {name, surname, age} = useSelector((state: StateType) => state.person);
 
   return (
@@ -20,4 +20,4 @@ const Second = () => {
   );
 };
 
-export default Second;
+export default OutputPage;
