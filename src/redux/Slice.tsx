@@ -15,7 +15,7 @@ const Slice = createSlice({
       state.name = action.payload;
     },
     setSurname(state, action) {
-      state.name = action.payload;
+      state.surname = action.payload;
     },
     setAge(state, action) {
       state.age = action.payload;
