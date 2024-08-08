@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, SafeAreaView, Text} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 import Stlye from './StackScreen.style';
 import {TouchableOpacity} from 'react-native';
 import {InputStackParamList} from '../../navigation/types/types';
