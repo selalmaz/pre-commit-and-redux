@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, TextInput, Text} from 'react-native';
 import style from './Input.style';
 import {useDispatch, useSelector} from 'react-redux';

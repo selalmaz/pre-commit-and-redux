@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, Text, View, TouchableOpacity} from 'react-native';
+import {Text, View, TouchableOpacity} from 'react-native';
 import style from './Output.style';
 import {useSelector} from 'react-redux';
 import {StateType} from '../../redux/Store';

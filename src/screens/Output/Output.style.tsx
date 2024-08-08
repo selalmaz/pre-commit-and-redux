@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#bdbdbd',
+    backgroundColor: '#90d1c8', // Açık yeşil tonlarında bir arka plan rengi
     padding: 20,
   },
   outputContainer: {
@@ -17,19 +17,20 @@ export default StyleSheet.create({
     borderWidth: 1,
     textAlignVertical: 'center',
     borderRadius: 5,
-    color: 'white',
+    color: 'black', // Açık mavi/yeşil tonlarında bir yazı rengi
     padding: 10,
     margin: 10,
     fontSize: 16,
+    borderColor: 'black', // Yeşil tonlarında bir border rengi
   },
   header: {
     textAlign: 'center',
     fontSize: 25,
     fontWeight: 'bold',
-    color: 'red',
+    color: '#008080', // Teal rengi
   },
   button: {
-    backgroundColor: '#005477',
+    backgroundColor: '#005477', // Koyu mavi bir buton rengi
     padding: 10,
     borderRadius: 10,
   },
