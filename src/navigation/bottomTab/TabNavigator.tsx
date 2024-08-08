@@ -1,10 +1,10 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import First from '../../screens/Input';
-import Second from '../../screens/Output';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {tabParamList} from './types/types';
+import {tabParamList} from '../types/types';
+import InputStack from '../StackNav/InputStack';
+import OutputStack from '../StackNav/OutputStack';
 
 const Tab = createBottomTabNavigator<tabParamList>();
 
@@ -21,7 +21,7 @@ const TabNavigator = () => {
         }}>
         <Tab.Screen
           name="inputPage"
-          component={First}
+          component={InputStack}
           options={({route}) => ({
             tabBarLabel: 'Input',
             tabBarIcon: ({focused, color, size}) => (
@@ -35,7 +35,7 @@ const TabNavigator = () => {
         />
         <Tab.Screen
           name="outputPage"
-          component={Second}
+          component={OutputStack}
           options={({route}) => ({
             tabBarLabel: 'Output',
             tabBarIcon: ({focused, color, size}) => (

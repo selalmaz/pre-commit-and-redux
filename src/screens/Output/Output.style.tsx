@@ -28,4 +28,14 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     color: 'red',
   },
+  button: {
+    backgroundColor: '#005477',
+    padding: 10,
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 20,
+  },
 });
